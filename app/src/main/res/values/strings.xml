@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">蓝色大道</string>
+
+    <string name="auth_username">请输入手机号</string>
+    <string name="auth_validation">请输入身份证后6位</string>
+
+    <string name="login">登录</string>
+    
+    <string name="information"></string>
+    <string name="quit">退出账户</string>
+
+    <string name="consume">消费记录</string>
+    <string name="recharge">充值记录</string>
+    <string name="station">换电站</string>
+    <string name="account">我的账户</string>
+
+    <string name="back">＜我的账户</string>
+    <string name="coupon">优惠券</string>
+    <string name="message">通知消息</string>
+    <string name="system_notice">系统通知</string>
+    <string name="post_message">推送消息</string>
+    <string name="show_list">显示列表</string>
+
+    <string name="qrcode">我的二维码</string>
+    <string name="team">我的团队</string>
+</resources>

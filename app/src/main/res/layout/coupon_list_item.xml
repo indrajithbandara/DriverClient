@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coupon_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:background="@color/orange"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:background="@drawable/coupon_xuxian">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="¥"
+                    android:textSize="32sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="right|center" />
+
+                <TextView
+                    android:id="@+id/coupon_fare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:text="20.00"
+                    android:textSize="32sp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:gravity="left|center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/coupon_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="6dp"
+                    android:text="充值返现优惠券"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:gravity="center|left"/>
+
+                <TextView
+                    android:id="@+id/left_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="6dp"
+                    android:text="剩余80.40元未使用"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:gravity="center|left"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/coupon_time"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="6dp"
+                android:text="2017.2.22至2017.3.31"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:gravity="left"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/coupon_used"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="232dp"
+            android:layout_marginBottom="56dp"
+            android:background="@drawable/coupon_used"/>
+    </LinearLayout>
+
+</FrameLayout>

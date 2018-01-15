@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_height="200dp"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="蓝色大道"
+            android:textSize="30sp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/login_background_color"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:layout_marginTop="0dp">
+
+            <com.botann.driverclient.ClearEditText
+                android:id="@+id/account_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/icon_user"
+                android:contentDescription="@string/auth_username"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/auth_username"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/delete_selector"
+                android:inputType="textNoSuggestions"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_hint_color"
+                android:maxLines="1" >
+            </com.botann.driverclient.ClearEditText>
+
+            <com.botann.driverclient.ClearEditText
+                android:id="@+id/account_validation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/account_icon"
+                android:contentDescription="@string/auth_validation"
+                android:drawablePadding="5dp"
+                android:ems="10"
+                android:hint="@string/auth_validation"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/delete_selector"
+                android:inputType="textPassword"
+                android:textColor="@color/login_text_color"
+                android:textColorHint="@color/login_text_hint_color"
+                android:maxLines="1" >
+            </com.botann.driverclient.ClearEditText>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/login"
+            android:textColor="@color/text_white"
+            android:background="@drawable/login_button_style" />
+
+    </LinearLayout>
+
+</ScrollView>

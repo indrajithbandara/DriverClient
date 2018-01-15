@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/account_refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.botann.driverclient.utils.PercentLinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_black">
+
+        <com.botann.driverclient.utils.PercentLinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="22%"
+            app:layout_widthPercent="100%"
+            android:orientation="horizontal">
+
+            <com.botann.driverclient.utils.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent="25%"
+                app:layout_heightPercent="100%"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@color/text_blue">
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/shape_username_bg"
+                    app:layout_widthPercent="80%"
+                    app:layout_heightPercent="64%"
+                    android:text="赵寒阳"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textColor="@android:color/black"/>
+
+            </com.botann.driverclient.utils.PercentLinearLayout>
+
+            <com.botann.driverclient.utils.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent="55%"
+                app:layout_heightPercent="100%"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/text_blue">
+
+                <TextView
+                    android:id="@+id/user_account"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="20%"
+                    app:layout_marginTopPercent="26%"
+                    app:layout_marginBottomPercent="4%"
+                    android:text="2017052117171800000206"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:background="@color/text_blue"
+                    android:textColor="@color/text_white" />
+
+                <TextView
+                    android:id="@+id/left_money"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="20%"
+                    app:layout_marginTopPercent="4%"
+                    app:layout_marginBottomPercent="26%"
+                    android:text="账户余额：-1000元"
+                    android:textSize="16sp"
+                    android:gravity="center|left"
+                    android:paddingLeft="6dp"
+                    android:background="@drawable/shape_leftmoney_bg"
+                    android:textColor="@color/text_white" />
+
+            </com.botann.driverclient.utils.PercentLinearLayout>
+
+            <com.botann.driverclient.utils.PercentLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_widthPercent="20%"
+                app:layout_heightPercent="100%"
+                android:orientation="horizontal"
+                android:background="@color/text_blue">
+
+            </com.botann.driverclient.utils.PercentLinearLayout>
+
+        </com.botann.driverclient.utils.PercentLinearLayout>
+
+        <com.botann.driverclient.utils.PercentLinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_heightPercent="16%"
+            app:layout_widthPercent="100%"
+            android:background="@color/text_white">
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="50%" >
+
+                <TextView
+                    android:id="@+id/coupon"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="84%"
+                    app:layout_marginTopPercent="16%"
+                    android:gravity="bottom|center"
+                    android:drawableTop="@drawable/coupon"
+                    android:text="优惠券"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/coupon_largeNum"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_widthPercent="22%"
+                    app:layout_heightPercent="34%"
+                    app:layout_marginLeftPercent="49%"
+                    app:layout_marginTopPercent="12%"
+                    android:gravity="center"
+                    android:text="112"
+                    android:textColor="@color/text_blue"
+                    android:textSize="16sp"
+                    android:background="@drawable/shape_common_bg2" />
+
+                <TextView
+                    android:id="@+id/couponNum"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_widthPercent="14%"
+                    app:layout_heightPercent="34%"
+                    app:layout_marginLeftPercent="53%"
+                    app:layout_marginTopPercent="12%"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/text_blue"
+                    android:textSize="16sp"
+                    android:background="@drawable/shape_common_bg" />
+
+            </android.support.percent.PercentFrameLayout>
+
+            <android.support.percent.PercentFrameLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="50%" >
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_widthPercent="100%"
+                    app:layout_heightPercent="84%"
+                    app:layout_marginTopPercent="16%"
+                    android:gravity="bottom|center"
+                    android:drawableTop="@drawable/message"
+                    android:text="消息通知"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/message_largeNum"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_widthPercent="22%"
+                    app:layout_heightPercent="34%"
+                    app:layout_marginLeftPercent="49%"
+                    app:layout_marginTopPercent="12%"
+                    android:gravity="center"
+                    android:text="112"
+                    android:textColor="@color/text_blue"
+                    android:textSize="16sp"
+                    android:background="@drawable/shape_common_bg2"
+                    android:visibility="visible"/>
+
+                <TextView
+                    android:id="@+id/messageNum"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    app:layout_widthPercent="14%"
+                    app:layout_heightPercent="34%"
+                    app:layout_marginLeftPercent="53%"
+                    app:layout_marginTopPercent="12%"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/text_blue"
+                    android:textSize="16sp"
+                    android:background="@drawable/shape_common_bg"/>
+
+            </android.support.percent.PercentFrameLayout>
+
+        </com.botann.driverclient.utils.PercentLinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="8%"
+            app:layout_marginTopPercent="2%"
+            android:paddingLeft="10dp"
+            android:text="@string/qrcode"
+            android:gravity="left|center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@color/text_white" />
+
+        <com.botann.driverclient.utils.PercentLinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="52%"
+            android:background="@color/text_white">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_heightPercent="80%"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"/>
+
+        </com.botann.driverclient.utils.PercentLinearLayout>
+
+    </com.botann.driverclient.utils.PercentLinearLayout>
+
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
